@@ -1,0 +1,67 @@
+﻿body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 75px 495px;
+    max-width: 1275px;
+    width: 100%;
+}
+
+.logo {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: lightpink;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
+
+.logo img {
+    width: 15%;
+    height: auto;
+}
+
+.nav {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: darkred;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    padding-left: 11%;
+}
+
+.nav ul li {
+    display: inline-flex;
+    padding: 15px;
+}
+
+.nav a, a:active, a:hover {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.main-content {
+    grid-column: 1;
+    grid-row: 3;
+    background-image: url(https://github.com/WeCanCodeIT/Bootstrap-LifeIsStrange/blob/master/images/junkyard.jpg?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+}
